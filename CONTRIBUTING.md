@@ -10,6 +10,7 @@ Thank you for helping improve Funnel Engineering System (FES). This repository i
 4. Add regression tests for behavior changes and run:
 
    ```bash
+   python3 -m pip install -r requirements-test.txt
    python3 tools/validate_package.py
    python3 -m unittest discover -s tests -v
    python3 tools/smoke_test.py

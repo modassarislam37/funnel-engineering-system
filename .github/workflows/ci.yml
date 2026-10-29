@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-test.txt
       - name: Validate skill package
         run: python tools/validate_package.py
       - name: Unit tests

@@ -141,7 +141,10 @@ class RoleUpgradeTests(unittest.TestCase):
             self.assertEqual((roles/'fes_reviewer.toml.fes-v4-2-backup').read_text(),'sandbox_mode = "read-only"\n')
 
     def test_role_schema_fully_formed(self):
-        import tomllib
+        try:
+            import tomllib
+        except ModuleNotFoundError:  # Python 3.10 test-only fallback
+            import tomli as tomllib
         from validate_package import validate
         self.assertEqual(validate(ROOT),[])
         for p in (ROOT/'codex/agents').glob('*.toml'):

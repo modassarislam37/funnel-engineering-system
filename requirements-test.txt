@@ -1,0 +1,2 @@
+# Only Python 3.10 needs a TOML parser for the Codex role-schema test.
+tomli==2.2.1; python_version < "3.11"
