@@ -1,6 +1,6 @@
 # Five-minute start
 
-1. Extract ZIP into a stable folder on your machine. Python 3.10+ required.
+1. Clone this repository into a stable folder using `git clone https://github.com/modassarislam37/funnel-engineering-system-github-ready-v5.git`. Python 3.10+ required.
 2. Run `python3 tools/install_portable.py --agent <codex|claude|cursor|gemini|copilot|opencode|all> --scope user --profile rescue --dry-run`.
 3. Run the same command without `--dry-run` to install. Restart the host if it does not discover skills immediately.
 4. Open an app project you own with a clean Git snapshot; do not provide production secrets. Give the agent the FES folder's **absolute** path.

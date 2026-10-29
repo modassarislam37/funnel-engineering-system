@@ -30,6 +30,8 @@ jobs:
         run: python tools/validate_package.py
       - name: Unit tests
         run: python -m unittest discover -s tests -v
+      - name: Validate documentation website
+        run: python -m unittest discover -s tests -p 'test_site.py' -v
       - name: Smoke test
         run: python tools/smoke_test.py
       - name: Rescue smoke test

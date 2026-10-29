@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://modassarislam37.github.io/funnel-engineering-system-github-ready-v5/sitemap.xml
