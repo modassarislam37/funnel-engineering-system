@@ -68,6 +68,3 @@ The hardening scanner is an offline heuristic, not full SAST/DAST, a dependency-
 
 **Tests:** original v4.2 suite plus new portable-install tests. `TESTING-v5.md` reports the actual results from the current build.
 
-## Publish this distribution to GitHub
-
-To upload the complete source to the designated **empty** repository, run `python3 tools/publish_to_github.py --dry-run` followed by `python3 tools/publish_to_github.py` from the extracted release directory. See [publishing instructions](docs/PUBLISHING.md).
