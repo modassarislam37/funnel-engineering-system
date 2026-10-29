@@ -1,0 +1,5 @@
+# REVIEW AND MANUALLY MERGE into ~/.codex/config.toml or trusted project .codex/config.toml.
+# Role .toml files are discovered from .codex/agents. This snippet does not enable
+# sandbox overrides, grant network access, or overwrite the parent session policy.
+[agents]
+max_concurrent_threads_per_session = 4

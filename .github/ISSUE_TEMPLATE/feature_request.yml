@@ -1,0 +1,17 @@
+name: Feature request
+description: Propose a documented new feature or skill.
+title: '[Feature] '
+labels: [enhancement]
+body:
+  - type: textarea
+    id: gap
+    attributes:
+      label: Capability gap
+      description: What task cannot be completed with existing skills or tooling?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Example or acceptance criteria
+      description: Provide an observable success condition.

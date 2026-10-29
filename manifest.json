@@ -1,0 +1,69 @@
+{
+  "name": "funnel-engineering-system-universal",
+  "version": "5.0.0",
+  "description": "Open-source, cross-agent engineering toolkit with evidence-gated bug repair and security hardening",
+  "skills": [
+    "fes-agent-portability",
+    "fes-ai",
+    "fes-api",
+    "fes-architect",
+    "fes-ci",
+    "fes-coordinator",
+    "fes-data",
+    "fes-deliver",
+    "fes-evaluation",
+    "fes-frontend",
+    "fes-implement",
+    "fes-investigate",
+    "fes-performance",
+    "fes-product",
+    "fes-recovery",
+    "fes-release",
+    "fes-review",
+    "fes-security",
+    "fes-skill-forge",
+    "fes-test",
+    "fes-vibe-hardening",
+    "funnel-engineer"
+  ],
+  "agents": [
+    "fes_architect",
+    "fes_developer",
+    "fes_reviewer",
+    "fes_security_auditor",
+    "fes_tester"
+  ],
+  "requires": {
+    "python": ">=3.10",
+    "os": "macOS or Linux (POSIX locking)"
+  },
+  "entrypoints": {
+    "cli": "tools/funnel.py",
+    "install": "tools/install.py",
+    "migrate_v3": "tools/migrate_v3.py",
+    "smoke": "tools/smoke_test.py",
+    "skill_engine": "tools/skill_engine.py",
+    "hardening": "tools/hardening.py",
+    "evaluation": "tools/evaluation.py",
+    "inventory": "tools/inventory.py",
+    "portable_install": "tools/install_portable.py"
+  },
+  "test": "python3 -m unittest discover -s tests -v",
+  "compatible_agents": [
+    "codex",
+    "claude",
+    "cursor",
+    "gemini",
+    "copilot",
+    "opencode"
+  ],
+  "distribution": {
+    "profiles": [
+      "core",
+      "rescue",
+      "full"
+    ],
+    "claim": "Skill format portability; not uniform host runtime capabilities"
+  },
+  "license": "MIT"
+}

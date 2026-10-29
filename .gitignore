@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local evidence, project data, and secrets
+.funnel/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+
+# Environment-specific and generated artifacts
+.DS_Store
+.idea/
+.vscode/
+dist/
+build/
+*.egg-info/
+*.zip
+*.log
